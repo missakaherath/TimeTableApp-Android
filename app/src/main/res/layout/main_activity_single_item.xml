@@ -1,0 +1,52 @@
+<androidx.cardview.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:elevation="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:id="@+id/ivMain"
+            android:layout_marginLeft="10dp">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/tvMain"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/ivMain"
+            android:textSize="24sp"
+            android:layout_marginLeft="7dp"
+            android:text="Time Table">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDescription"
+            android:layout_toRightOf="@+id/ivMain"
+            android:layout_below="@+id/tvMain"
+            android:textSize="16dp"
+            android:layout_marginLeft="7dp"
+            android:text="Description">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvClick"
+            android:textSize="12dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvDescription"
+            android:layout_alignBottom="@+id/ivMain"
+            android:text="Click Here">
+        </TextView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
