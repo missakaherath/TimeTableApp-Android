@@ -9,8 +9,10 @@ import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -32,6 +34,7 @@ public class weeklyView extends AppCompatActivity {
 
         setupUIViews();
         initToolbar();
+        setupListView();
     }
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void setupUIViews(){
@@ -41,11 +44,27 @@ public class weeklyView extends AppCompatActivity {
     private void initToolbar(){
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Week");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     private void setupListView(){
         String[] week = getResources().getStringArray(R.array.Week);
         WeekAdapter adapter = new WeekAdapter(this, R.layout.week_activity_singlt_item, week);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                int position = 0;
+                switch (position){
+                    case 0: break;
+                    case 1: break;
+                    case 2: break;
+                    case 3: break;
+                    case 4: break;
+                    case 5: break;
+                    default: break;
+                }
+            }
+        });
     }
 
     public class WeekAdapter extends ArrayAdapter{
@@ -66,16 +85,30 @@ public class weeklyView extends AppCompatActivity {
                 holder = new ViewHolder();
                 convertView = layoutInflater.inflate(resource, null);
                 holder.ivLogo = (LetterImageView)convertView.findViewById(R.id.ivLetter);
-                holder.tvWeek = (TextView)convertView.findViewById(R.id.tvMain);
+                holder.tvWeek = (TextView)convertView.findViewById(R.id.tvWeek);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder)convertView.getTag();
             }
+            holder.ivLogo.setOval(true);
+            holder.ivLogo.setLetter(week[position].charAt(0));
+            holder.tvWeek.setText(week[position]);
+
             return convertView;
         }
         class ViewHolder{
             private LetterImageView ivLogo;
             private TextView tvWeek;
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home : {
+                onBackPressed();
+            }
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

@@ -4,11 +4,13 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -49,6 +51,27 @@ public class MainActivity extends AppCompatActivity {
 
         SimpleAdapter simpleAdapter = new SimpleAdapter(this, title, description);
         listview.setAdapter(simpleAdapter);
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 0 : {
+                        Intent intent = new Intent(MainActivity.this, weeklyView.class);
+                        startActivity(intent);
+                        break;
+                    }
+                    case 1 : {
+                        break;
+                    }
+                    case 2 : {
+                        break;
+                    }
+                    case 3  : {
+                        break;
+                    }
+                }
+            }
+        });
     }
     public class SimpleAdapter extends BaseAdapter{
 
