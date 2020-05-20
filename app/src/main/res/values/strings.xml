@@ -22,4 +22,54 @@
         <item>Saturday</item>
         <item>Sunday</item>
     </string-array>
+    <string-array name="Monday">
+        <item>Algo</item>
+        <item>OOP</item>
+        <item>Security</item>
+        <item>interval</item>
+        <item>ToC</item>
+    </string-array>
+    <string-array name="Tuesday">
+        <item>Algo</item>
+        <item>OOP</item>
+        <item>Security</item>
+        <item>interval</item>
+        <item>ToC</item>
+    </string-array>
+    <string-array name="Wednesday">
+        <item>Algo</item>
+        <item>OOP</item>
+        <item>Security</item>
+        <item>interval</item>
+        <item>ToC</item>
+    </string-array>
+    <string-array name="Thursday">
+        <item>OOSD</item>
+        <item>Graph theory</item>
+        <item>Project</item>
+        <item>interval</item>
+        <item>ToC</item>
+    </string-array>
+    <string-array name="Friday">
+        <item>Lab</item>
+        <item>OOP</item>
+        <item>Security</item>
+        <item>interval</item>
+        <item>Algebra</item>
+    </string-array>
+    <string-array name="Saturday">
+        <item>Practicals</item>
+        <item>OOP</item>
+        <item>Security</item>
+        <item>interval</item>
+        <item>ToC</item>
+    </string-array>
+    <string-array name="Time">
+        <item>8am - 10am</item>
+        <item>10am - 12 am</item>
+        <item>1pm - 3pm</item>
+        <item>3pm - 4pm</item>
+        <item>4pm - 6pm</item>
+    </string-array>
+
 </resources>

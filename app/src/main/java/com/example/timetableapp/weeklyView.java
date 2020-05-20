@@ -6,6 +6,8 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -25,6 +27,8 @@ public class weeklyView extends AppCompatActivity {
 
     private Toolbar toolbar;
     private ListView listView;
+    public static SharedPreferences sharedPreferences;
+    public static String SEL_DAY;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -40,6 +44,7 @@ public class weeklyView extends AppCompatActivity {
     private void setupUIViews(){
         toolbar = (Toolbar)findViewById(R.id.toolbarWeek);
         listView = (ListView)findViewById(R.id.lvWeek);
+        sharedPreferences = getSharedPreferences("MY_DAY", MODE_PRIVATE);
     }
     private void initToolbar(){
         setSupportActionBar(toolbar);
@@ -55,13 +60,38 @@ public class weeklyView extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 //                int position = 0;
                 switch (position){
-                    case 0: break;
-                    case 1: break;
-                    case 2: break;
-                    case 3: break;
-                    case 4: break;
-                    case 5: break;
-                    default: break;
+                    case 0:
+                        {
+                            startActivity(new Intent(weeklyView.this, DayDetail.class));
+                            sharedPreferences.edit().putString(SEL_DAY, "Monday").apply();
+                        break;}
+                    case 1:
+                        {
+                            startActivity(new Intent(weeklyView.this, DayDetail.class));
+                            sharedPreferences.edit().putString(SEL_DAY, "Tuesday").apply();
+                        break;}
+                    case 2:
+                        {
+                            startActivity(new Intent(weeklyView.this, DayDetail.class));
+                            sharedPreferences.edit().putString(SEL_DAY, "Wednesday").apply();
+                        break;}
+                    case 3:
+                        {
+                            startActivity(new Intent(weeklyView.this, DayDetail.class));
+                            sharedPreferences.edit().putString(SEL_DAY, "Thursday").apply();
+                        break;}
+                    case 4:
+                       {
+                           startActivity(new Intent(weeklyView.this, DayDetail.class));
+                           sharedPreferences.edit().putString(SEL_DAY, "Friday").apply();
+                        break;}
+                    case 5:
+                       {
+                           startActivity(new Intent(weeklyView.this, DayDetail.class));
+                           sharedPreferences.edit().putString(SEL_DAY, "Saturday").apply();
+                        break;}
+                    default:
+                        break;
                 }
             }
         });

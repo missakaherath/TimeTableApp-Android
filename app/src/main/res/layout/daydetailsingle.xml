@@ -1,0 +1,41 @@
+<androidx.cardview.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:elevation="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.timetableapp.Utils.LetterImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/ivDayDetails"
+            android:layout_margin="8dp">
+        </com.example.timetableapp.Utils.LetterImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/tvDayDetails"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/ivDayDetails"
+            android:textSize="24sp"
+            android:layout_marginLeft="7dp"
+            android:text="Subjects">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/tvTimeDayDetail"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@+id/ivDayDetails"
+            android:textSize="15sp"
+            android:layout_marginLeft="7dp"
+            android:text="Time">
+        </TextView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
