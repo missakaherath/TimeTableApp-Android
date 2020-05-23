@@ -71,5 +71,45 @@
         <item>3pm - 4pm</item>
         <item>4pm - 6pm</item>
     </string-array>
+    <string-array name="Subjects">
+        <item>OOP</item>
+        <item>OOSD</item>
+        <item>OS</item>
+        <!--        <item>Algo</item>-->
+        <!--        <item>Differential</item>-->
+        <!--        <item>Signals and Systems</item>-->
+        <!--        <item>DB</item>-->
+        <!--        <item>ToC</item>-->
+        <!--        <item>Computer Security</item>-->
+        <!--        <item>Graph</item>-->
+    </string-array>
+    <string-array name="OOPSyllabus">
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst vestibulum rhoncus est pellentesque. Felis donec et odio pellentesque diam volutpat commodo sed egestas. Aliquam vestibulum morbi blandit cursus risus at ultrices. Sem fringilla ut morbi tincidunt augue interdum</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst vestibulum rhoncus est pellentesque. Felis donec et odio pellentesque</item>
+        <item>Eget egestas purus viverra accumsan in nisl. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Aliquam etiam erat </item>
+        <item>Nam libero justo laoreet sit amet cursus. Malesuada fames ac turpis egestas sed. Vulputate mi sit amet mauris commodo quis.</item>
+        <item>Non nisi est sit amet facilisis magna. Laoreet non curabitur gravida arcu ac tortor. Etiam non quam lacus suspendisse faucibus</item>
+    </string-array>
+        <string-array name="OOSDSyllabus">
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst vestibulum rhoncus est pellentesque. Felis donec et odio pellentesque diam volutpat commodo sed egestas. Aliquam vestibulum morbi blandit cursus risus at ultrices. Sem fringilla ut morbi tincidunt augue interdum</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst vestibulum rhoncus est pellentesque. Felis donec et odio pellentesque</item>
+        <item>Eget egestas purus viverra accumsan in nisl. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Aliquam etiam erat </item>
+        <item>Nam libero justo laoreet sit amet cursus. Malesuada fames ac turpis egestas sed. Vulputate mi sit amet mauris commodo quis.</item>
+        <item>Non nisi est sit amet facilisis magna. Laoreet non curabitur gravida arcu ac tortor. Etiam non quam lacus suspendisse faucibus</item>
+    </string-array>
+    <string-array name="OSSyllabus">
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst vestibulum rhoncus est pellentesque. Felis donec et odio pellentesque diam volutpat commodo sed egestas. Aliquam vestibulum morbi blandit cursus risus at ultrices. Sem fringilla ut morbi tincidunt augue interdum</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst vestibulum rhoncus est pellentesque. Felis donec et odio pellentesque</item>
+        <item>Eget egestas purus viverra accumsan in nisl. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Aliquam etiam erat </item>
+        <item>Nam libero justo laoreet sit amet cursus. Malesuada fames ac turpis egestas sed. Vulputate mi sit amet mauris commodo quis.</item>
+        <item>Non nisi est sit amet facilisis magna. Laoreet non curabitur gravida arcu ac tortor. Etiam non quam lacus suspendisse faucibus</item>
+    </string-array>
+    <string-array name="title">
+        <item>Unit 1</item>
+        <item>Unit 2</item>
+        <item>Unit 3</item>
+        <item>Unit 4</item>
+        <item>Unit 5</item>
+    </string-array>
 
 </resources>

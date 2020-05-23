@@ -100,7 +100,7 @@ public class weeklyView extends AppCompatActivity {
     public class WeekAdapter extends ArrayAdapter{
         private int resource;
         private LayoutInflater layoutInflater;
-        private String[] week = new String[]{};
+        private String[] week;
         public WeekAdapter(Context context, int resource, String[] objects) {
             super(context, resource, objects);
             this.resource=resource;
